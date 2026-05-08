@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #1b0b2e, #3d1366);
+    color: white;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1{
+    font-size: 3rem;
+    color: #d8b4ff;
+}
+
+.idade-box{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #b266ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #9333ea;
+}
+
+#catalogo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.card{
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img,
+.card iframe{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.conteudo{
+    padding: 20px;
+}
+
+.genero{
+    color: #d8b4ff;
+}
+
+.nota{
+    font-weight: bold;
+}
+
+.curiosidade{
+    margin-top: 15px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.premium{
+    border: 3px solid gold;
+    box-shadow: 0 0 20px gold;
+}
+
+.restrito{
+    filter: blur(10px);
+}
+
+.aviso{
+    text-align: center;
+    padding: 20px;
+    color: red;
+    font-weight: bold;
+}
